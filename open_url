@@ -386,7 +386,7 @@ cmd_start() {
 # Run the visualizer
 cmd_vis() {
   deploy_swarm_visualizer
-  url="http://${manager_ip}:5000"
+  url="http://${manager_ip}:8080"
   if [[ ${1:-""} == "--url" ]]; then
     echo "$url"
   else
